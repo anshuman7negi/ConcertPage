@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  background-image: url(images/concert-mobile-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header .first-navbar {
+  display: none;
+  background-color: #3e3e3e;
+  margin: 0;
+}
+
+header nav {
+  padding: 4%;
+}
+
+header nav .hamburger {
+  font-size: 50px;
+}
+
+header .first-navbar span {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.main {
+  width: 100%;
+  min-height: 70vh;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.content {
+  color: #fff;
+}
+
+.main-content-heading {
+  font-size: 40px;
+  font-weight: 900;
+  background-image: url(images/sun.jpg);
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 46px;
+}
+
+.container {
+  padding: 2%;
+}
+
+.content-hellow {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 20px 0;
+  color: #f36038;
+}
+
+.content-detail {
+  border: 4px solid white;
+  margin: 20px 0;
+  line-height: 30px;
+  padding: 10px;
+  color: #898989;
+  background-color: #f6f6f7;
+}
+
+.content-secondHeading {
+  font-weight: 900;
+  color: #6d6d6d;
+  font-size: 28px;
+  margin: 10px;
+}
+
+.content-lastline {
+  color: #8f8f8f;
+  font-size: 20px;
+  font-weight: 300;
+  font-weight: 500;
+  margin: 10px;
+}
+
+/* ------------------card work---------------- */
+.program {
+  display: grid;
+  grid-row-gap: 30px;
+  justify-content: center;
+  background-color: #010101;
+  padding: 7% 0;
+  color: #fff;
+}
+
+.program h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.program button {
+  width: 200px;
+  height: 50px;
+  background-color: #fe4f38;
+  color: #fdd9d6;
+  border: none;
+  margin: 10px auto;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  background-color: rgba(39, 42, 49, 0.5);
+  color: #d3d3d3;
+  margin: 8px 0;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.Card h5 {
+  font-size: 1.3rem;
+  color: #d74c3a;
+}
+
+/* -------------------guest work starting----------------------- */
+.guests {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 0;
+  gap: 20px;
+}
+
+.guests h2 {
+  margin: 15px auto;
+  font-size: 30px;
+  line-height: 35px;
+  color: #46484e;
+}
+
+.guest-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.singer {
+  display: flex;
+  gap: 10px;
+}
+
+.guests button {
+  width: 90%;
+  height: 50px;
+  margin: 20px auto;
+  font-size: 25px;
+  background-color: #fff;
+  border: 1px solid #eee;
+}
+
+.singer-details h4 {
+  color: #fd9b91;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+/* -------------------------Desktop version startin from here-------------------- */
+@media screen and (min-width: 768px) {
+  header .first-navbar {
+    display: block;
+    background-color: #3e3e3e;
+    margin: 0;
+  }
+
+  header .first-navbar ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2%;
+    padding-right: 2%;
+  }
+
+  header .first-navbar ul li {
+    list-style-type: none;
+    color: #fff;
+  }
+
+  header .first-navbar ul li img {
+    width: 30px;
+  }
+}
