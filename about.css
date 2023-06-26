@@ -108,11 +108,74 @@
   }
 
   .about-music .logo span {
-    color: #f22a18;
+    color: #f22917;
   }
 
   .about-music .logo a {
     font-size: 62px;
     line-height: 48px;
     text-decoration: none;
+  }
+
+  .about-past {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-top: 2px solid #d3d3d3;
+    padding: 20px;
+    margin: 40px 0;
+  }
+
+  .about-past h2  {
+    font-size: 25px;
+    color: #272a31;
+    position: relative;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .about-past p {
+    color: #272a31;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .about-past-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-past-container >div {
+    width: 100%;
+    height: 250px;
+    position: relative;
+  }
+
+  .about-past-container img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .image-detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(242, 41, 23,0.6);
+  }
+
+  .image-detail h3 {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .image-detail p {
+    color: #fff;
+    font-size: 20px;
   }
