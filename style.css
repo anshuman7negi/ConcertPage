@@ -112,13 +112,15 @@ header {
   grid-row-gap: 30px;
   justify-content: center;
   background-color: #010101;
-  padding: 7% 0;
+  padding: 7% 2%;
   color: #fff;
 }
 
 .program h3 {
   display: flex;
   justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .program button {
@@ -128,6 +130,10 @@ header {
   color: #fdd9d6;
   border: none;
   margin: 10px auto;
+}
+
+.program a {
+  display: none;
 }
 
 .cards {
@@ -144,6 +150,16 @@ header {
   margin: 8px 0;
   padding: 0 20px;
   align-items: center;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+}
+
+.Card img {
+  width: 40px;
+}
+
+.Card:hover{
+  border: 1px solid #4b9d5c;
 }
 
 .Card h5 {
@@ -200,6 +216,14 @@ header {
   margin-bottom: 15px;
 }
 
+.partners {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
  /* ------------------------Desktop Version----------------- */
  @media screen and (min-width:768px) {
   header {
@@ -242,9 +266,9 @@ header {
   }
    
   .bottom-navbar .logo {
-      display: flex;
-      flex-direction: column;
-      gap: 0.3rem;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
   }
   
   .bottom-navbar .logo span {
@@ -252,7 +276,7 @@ header {
       line-height: 25px;
       color: #f34d17;
   }
-  
+
   header .bottom-navbar ul {
       display: flex;
       list-style-type: none;
@@ -274,4 +298,112 @@ header {
       border: 4px solid #f04831;
       padding: 0.9rem;
   }
+
+  .container {
+    padding: 7%;
+    padding-bottom: 10%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 210px;
+  }
+
+  .program button {
+    display: none;
+  }
+
+  .program a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .program h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .Card p {
+    text-align: center;
+  }
+
+  #seeMore {
+    display: none;
+  }
+
+  .guest-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px;
+    align-items: center;
+  }
+
+  footer > .logo {
+    display: block;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+  
+  footer > .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo span {
+    color: #f22917;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 30px;
+    background-color: #404245;
+  }
+
+  .partners h2 {
+    color: #fff;
+  }
+
+
+  .partners-details img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+
+
 }

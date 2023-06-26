@@ -1,23 +1,23 @@
 const projectCards = [
   {
-    image: '/images/sun.jpg',
+    image: '/images/music.png',
+    cardTitle: 'Music Night',
+    cardDetail: ' Enjoy live show full of your favourite songs.',
+  },
+  {
+    image: '/images/dance.png',
     cardTitle: 'Dancing',
     cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
   },
   {
-    image: '/images/sun.jpg',
-    cardTitle: 'Dancing',
-    cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
+    image: '/images/collab.png',
+    cardTitle: 'Collaboration',
+    cardDetail: 'You will get a chance to collaborate with singers.',
   },
   {
-    image: '/images/sun.jpg',
-    cardTitle: 'Dancing',
-    cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
-  },
-  {
-    image: '/images/sun.jpg',
-    cardTitle: 'Dancing',
-    cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
+    image: '/images/videoconference.png',
+    cardTitle: 'Meetup',
+    cardDetail: 'You will get a chance to meet with your favoratie singers.',
   },
 ];
 
@@ -25,7 +25,7 @@ const card = document.querySelector('#allcardS');
 
 for (let i = 0; i < projectCards.length; i += 1) {
   card.innerHTML += `<div class="Card">
-                          <i class="fas fa-music col-1 col-md-auto"></i>
+                          <img src="${projectCards[i].image}">
                           <h5>${projectCards[i].cardTitle}</h5>
                          <p>
                              ${projectCards[i].cardDetail}
@@ -115,3 +115,13 @@ document.getElementById('cancelBtn').addEventListener('click',()=>{
   }
   
 });
+
+if (window.innerWidth >= 768) {
+  createSingerCard();
+}
+
+// window.addEventListener('resize', function() {
+//   if (window.innerWidth >= 768) {
+//     createSingerCard();
+//   }
+// });
