@@ -18,6 +18,7 @@ header {
 .Mobile-navbar {
   padding: 20px;
 }
+
 .Mobile-navbar ul {
   display: none;
 }
@@ -160,7 +161,7 @@ header {
   font-size: 20px;
   background-color: #fff;
   border: 1px solid #d3d3d3;
-  box-shadow: 0px 2px #fe4f38;
+  box-shadow: 1px 2px #fe4f38;
 }
 
 .singer-details h4 {
