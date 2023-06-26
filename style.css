@@ -21,6 +21,29 @@ header {
 
 .Mobile-navbar ul {
   display: none;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.Mobile-navbar img {
+  display: none;
+  background-color: red;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 40px;
+}
+
+.Mobile-navbar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #010101;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .Mobile-navbar .hamburger {
