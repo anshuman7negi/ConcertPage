@@ -98,7 +98,7 @@
     font-weight: 300;
   }
 
-  .about-music .logo {
+  .logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,11 +107,11 @@
     border: 2px solid #e0e0e0;
   }
 
-  .about-music .logo span {
+  .logo span {
     color: #f22917;
   }
 
-  .about-music .logo a {
+  .logo a {
     font-size: 62px;
     line-height: 48px;
     text-decoration: none;
@@ -201,4 +201,24 @@
     width: 84px;
     height: 60px;
     margin: 10px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    align-items: center;
+  }
+
+  footer > .logo {
+    display: block;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+  
+  footer > .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
   }
