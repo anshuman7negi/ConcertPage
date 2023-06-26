@@ -86,20 +86,21 @@ header {
   margin: 20px 0;
   line-height: 30px;
   padding: 10px;
-  color: #898989;
+  color: #010101;
   background-color: #f6f6f7;
+  max-width: 900px;
 }
 
 .content-secondHeading {
   font-weight: 900;
   color: #6d6d6d;
-  font-size: 28px;
+  font-size: 34px;
   margin: 10px;
 }
 
 .content-lastline {
   color: #8f8f8f;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   font-weight: 500;
   margin: 10px;
@@ -154,7 +155,7 @@ header {
 .guests {
   display: flex;
   flex-direction: column;
-  padding: 2% 0;
+  padding: 2% 1%;
   gap: 20px;
 }
 
@@ -174,7 +175,12 @@ header {
 
 .singer {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+
+.singer img {
+  width: 172px;
+  height: 171px;
 }
 
 .guests button {

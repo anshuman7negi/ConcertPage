@@ -35,36 +35,50 @@ for (let i = 0; i < projectCards.length; i += 1) {
 
 const singers = [
   {
-    singerImage: 'images/sun.jpg',
+    singerImage: 'images/neha.jpg',
+    singerName: 'Neha Singh',
+    singerTitle: 'Neha is very good singer he have almost released 300 songs',
+    singerDetail: 'Neha has relased more than 300 songs, and he only sing in hindi language.',
+  },
+  {
+    singerImage: 'images/diljeet.jpeg',
     singerName: 'Arjit Singh',
     singerTitle: 'He is very good singer he have almost released 300 songs',
     singerDetail: 'Benkler has relased more than 300 songs, and he only sing in hindi language.',
   },
   {
-    singerImage: 'images/sun.jpg',
-    singerName: 'Arjit Singh',
+    singerImage: 'images/arjit.jpeg',
+    singerName: 'Daljeet Singh',
     singerTitle: 'He is very good singer he have almost released 300 songs',
-    singerDetail: 'Benkler has relased more than 300 songs, and he only sing in hindi language.',
+    singerDetail: 'Daljeet has relased more than 300 songs, and he only sing in hindi language.',
   },
   {
-    singerImage: 'images/sun.jpg',
-    singerName: 'Arjit Singh',
-    singerTitle: 'He is very good singer he have almost released 300 songs',
-    singerDetail: 'Benkler has relased more than 300 songs, and he only sing in hindi language.',
+    singerImage: 'images/sunidhi.jpg',
+    singerName: 'sunidhi Singh',
+    singerTitle: 'sunidhi is very good singer he have almost released 300 songs',
+    singerDetail: 'Sunidhi has relased more than 300 songs, and he only sing in hindi language.',
   },
   {
-    singerImage: 'images/sun.jpg',
-    singerName: 'Arjit Singh',
+    singerImage: 'images/shreya.jpg',
+    singerName: 'Shreya Singh',
+    singerTitle: 'shreya is very good singer he have almost released 300 songs',
+    singerDetail: 'shreya has relased more than 300 songs, and he only sing in hindi language.',
+  },
+  {
+    singerImage: 'images/sonu.jpg',
+    singerName: 'sonu nigham',
     singerTitle: 'He is very good singer he have almost released 300 songs',
-    singerDetail: 'Benkler has relased more than 300 songs, and he only sing in hindi language.',
+    singerDetail: 'sonu has relased more than 300 songs, and he only sing in hindi language.',
   },
 ];
 
 function createSingerCard() {
+  document.getElementById('demo-card-one').style.display='none';
+  document.getElementById('demo-card-two').style.display='none';
   const guest = document.getElementById('guest-list');
   for (let i = 0; i < singers.length; i += 1) {
     guest.innerHTML += `<div class="singer">
-                            <img src="images/singer1.png" alt="">
+                            <img src="${singers[i].singerImage}" alt="">
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
