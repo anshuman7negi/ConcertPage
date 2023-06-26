@@ -179,3 +179,26 @@
     color: #fff;
     font-size: 20px;
   }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 30px;
+    background-color: #404245;
+  }
+
+  .partners h2 {
+    color: #fff;
+  }
+
+  .partners-details {
+   
+  }
+
+  .partners-details img {
+    width: 84px;
+    height: 60px;
+    margin: 10px;
+  }
