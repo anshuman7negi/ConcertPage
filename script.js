@@ -73,8 +73,8 @@ const singers = [
 ];
 
 function createSingerCard() {
-  document.getElementById('demo-card-one').style.display='none';
-  document.getElementById('demo-card-two').style.display='none';
+  document.getElementById('demo-card-one').style.display = 'none';
+  document.getElementById('demo-card-two').style.display = 'none';
   const guest = document.getElementById('guest-list');
   for (let i = 0; i < singers.length; i += 1) {
     guest.innerHTML += `<div class="singer">
@@ -106,14 +106,13 @@ hamburger.addEventListener('click', () => {
 
 // cancel button functionality
 
-document.getElementById('cancelBtn').addEventListener('click',()=>{
-  hamburger.style.display='block';
+document.getElementById('cancelBtn').addEventListener('click', () => {
+  hamburger.style.display = 'block';
   list.style.display = 'none';
   document.getElementById('cancelBtn').style.display = 'none';
   for (let i = 0; i < hideElements.length; i += 1) {
     hideElements[i].style.display = '';
   }
-  
 });
 
 if (window.innerWidth >= 768) {

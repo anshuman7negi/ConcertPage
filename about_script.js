@@ -12,12 +12,11 @@ hamburger.addEventListener('click', () => {
 
 // cancel button functionality
 
-document.getElementById('cancelBtn').addEventListener('click',()=>{
-  hamburger.style.display='block';
+document.getElementById('cancelBtn').addEventListener('click', () => {
+  hamburger.style.display = 'block';
   list.style.display = 'none';
   document.getElementById('cancelBtn').style.display = 'none';
   for (let i = 0; i < hideElements.length; i += 1) {
     hideElements[i].style.display = '';
   }
-  
 });

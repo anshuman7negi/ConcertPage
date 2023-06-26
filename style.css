@@ -38,6 +38,10 @@ header {
   width: 40px;
 }
 
+.program a {
+  display: none;
+}
+
 .Mobile-navbar ul li a {
   text-decoration: none;
   font-size: 25px;
@@ -132,10 +136,6 @@ header {
   margin: 10px auto;
 }
 
-.program a {
-  display: none;
-}
-
 .cards {
   display: flex;
   flex-direction: column;
@@ -158,7 +158,7 @@ header {
   width: 40px;
 }
 
-.Card:hover{
+.Card:hover {
   border: 1px solid #4b9d5c;
 }
 
@@ -224,79 +224,119 @@ footer {
   display: none;
 }
 
- /* ------------------------Desktop Version----------------- */
- @media screen and (min-width:768px) {
+/* ------------------------Desktop Version----------------- */
+@media screen and (min-width: 768px) {
   header {
-      display: block;
+    display: block;
   }
 
   header .top-navbar {
-      background-color: #3e3e3e;
-      color: #fff;
+    background-color: #3e3e3e;
+    color: #fff;
   }
-  
+
   header .top-navbar ul {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      gap: 1rem;
-      margin-right: 8rem;
-      list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    margin-right: 8rem;
+    list-style-type: none;
   }
-  
+
+  .program a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+
+  footer > .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
   header .top-navbar ul li a {
-      text-decoration: none;
-      color: #fff;
+    text-decoration: none;
+    color: #fff;
   }
-  
-  header .top-navbar ul li a img{
-      width: 2rem;
+
+  .partners-details img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
   }
-  
+
+  header .top-navbar ul li a img {
+    width: 2rem;
+  }
+
   .Mobile-navbar {
-      display: none;
+    display: none;
   }
-  
-   header .bottom-navbar {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.7rem 7rem;
+
+  header .bottom-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 7rem;
   }
-   
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .logo {
+    display: block;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
   .bottom-navbar .logo {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
   }
-  
+
+  .logo span {
+    color: #f22917;
+  }
+
   .bottom-navbar .logo span {
-      font-size: 30px;
-      line-height: 25px;
-      color: #f34d17;
+    font-size: 30px;
+    line-height: 25px;
+    color: #f34d17;
   }
 
   header .bottom-navbar ul {
-      display: flex;
-      list-style-type: none;
+    display: flex;
+    list-style-type: none;
   }
-  
+
   header .bottom-navbar ul li a {
-      text-decoration: none;
-      color: #3b434e;
-      font-size: 20px;
-      font-weight: 400;
+    text-decoration: none;
+    color: #3b434e;
+    font-size: 20px;
+    font-weight: 400;
   }
-  
+
   header .bottom-navbar ul li {
-      border: 4px solid #fff;
-      padding: 0.9rem;
+    border: 4px solid #fff;
+    padding: 0.9rem;
   }
-  
+
   header .bottom-navbar ul li:hover {
-      border: 4px solid #f04831;
-      padding: 0.9rem;
+    border: 4px solid #f04831;
+    padding: 0.9rem;
   }
 
   .container {
@@ -321,13 +361,6 @@ footer {
 
   .program button {
     display: none;
-  }
-
-  .program a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    font-size: 20px;
   }
 
   .program h3 {
@@ -358,33 +391,6 @@ footer {
     align-items: center;
   }
 
-  footer > .logo {
-    display: block;
-    height: 100%;
-    border: none;
-    padding: 0;
-  }
-  
-  footer > .logo a {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 20px;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo span {
-    color: #f22917;
-  }
-
-  .logo a {
-    text-decoration: none;
-  }
-
   .partners {
     display: flex;
     flex-direction: column;
@@ -397,13 +403,4 @@ footer {
   .partners h2 {
     color: #fff;
   }
-
-
-  .partners-details img {
-    width: 100px;
-    height: 100px;
-    margin: 20px;
-  }
-
-
 }
