@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-image: url(images/concert-mobile-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
+  .Mobile-navbar {
+    padding: 20px;
+  }
+  
+  .Mobile-navbar ul {
+    display: none;
+  }
+  
+  .Mobile-navbar .hamburger {
+    display: flex;
+    background-color: red;
+    align-items: center;
+    font-size: 40px;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .content {
+    color: #fff;
+  }
+  
+  .main-content-heading {
+    font-size: 40px;
+    font-weight: 900;
+    background-image: url(images/sun.jpg);
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 46px;
+  }
+  
+  .container {
+    padding: 4%;
+    padding-bottom: 10%;
+  }
+  
+  .content-hellow {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 12px;
+    margin: 20px 0;
+    color: #f36038;
+  }
+  
+  .content-detail {
+    border: 4px solid white;
+    margin: 20px 0;
+    line-height: 30px;
+    padding: 10px;
+    color: #898989;
+    background-color: #f6f6f7;
+  }
+  
+  .content-secondHeading {
+    font-weight: 900;
+    color: #6d6d6d;
+    font-size: 28px;
+    margin: 10px;
+  }
+  
+  .content-lastline {
+    color: #8f8f8f;
+    font-size: 20px;
+    font-weight: 300;
+    font-weight: 500;
+    margin: 10px;
+  }
