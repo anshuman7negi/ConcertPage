@@ -74,24 +74,55 @@ const singers = [
 
 function createSingerCard() {
   const guest = document.getElementById('guest-list');
-  for (let i = 0; i < singers.length; i += 1) {
+  const seeMoreBtn = document.getElementById('seeMore');
+  const maxIterations = (window.innerWidth < 768) ? 2 : singers.length;
+  for (let i = 0; i < maxIterations; i += 1) {
     guest.innerHTML += `<div class="singer">
-                            <img src="${singers[i].singerImage}" alt="">
+                            <img src="${singers[i].singerImage}" alt="card-singer-image">
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
                                <p>${singers[i].singerDetail}</p>
-                           </div>`;
+                           </div>
+                        </div>`;
   }
-  document.getElementById('seeMore').style.display = 'none';
+  if (window.innerWidth < 768) {
+    seeMoreBtn.style.display = 'block';
+    seeMoreBtn.addEventListener('click', showMoreCards);
+  }
+}
+
+function showMoreCards() {
+  const guest = document.getElementById('guest-list');
+  const seeMoreBtn = document.getElementById('seeMore');
+
+  for (let i = 2; i < singers.length; i += 1) {
+    guest.innerHTML += `<div class="singer">
+                            <img src="${singers[i].singerImage}" alt="card-singer-image">
+                            <div class="singer-details">
+                               <h3>${singers[i].singerName}</h3>
+                               <h4>${singers[i].singerTitle}</h4>
+                               <p>${singers[i].singerDetail}</p>
+                            </div>
+                         </div>`;
+  }
+
+  seeMoreBtn.style.display = 'none';
 }
 
 createSingerCard();
 
-// document.getElementById('seeMore').addEventListener('click', createSingerCard);
+window.addEventListener('resize', function() {
+  const guest = document.getElementById('guest-list');
+  const seeMoreBtn = document.getElementById('seeMore');
+  
+  guest.innerHTML = '';
+  
+  createSingerCard();
+});
+
 
 //  mobile menu click button
-
 const hamburger = document.getElementById('hamburger');
 const list = document.getElementById('hamburger-list');
 const hideElements = document.querySelectorAll('.container, .program, .guests');
