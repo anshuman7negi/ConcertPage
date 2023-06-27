@@ -24,13 +24,13 @@ const projectCards = [
 const card = document.querySelector('#allcardS');
 
 for (let i = 0; i < projectCards.length; i += 1) {
-  card.innerHTML += `<div class="Card">
+  card.innerHTML += `<article class="Card">
                           <img src="${projectCards[i].image}" alt="card-icon">
                           <h5>${projectCards[i].cardTitle}</h5>
                          <p>
                              ${projectCards[i].cardDetail}
                          </p>
-                        </div>`;
+                        </article>`;
 }
 
 const singers = [
@@ -77,14 +77,14 @@ function showMoreCards() {
   const seeMoreBtn = document.getElementById('seeMore');
 
   for (let i = 2; i < singers.length; i += 1) {
-    guest.innerHTML += `<div class="singer">
+    guest.innerHTML += `<article class="singer">
                             <div class="target"><img src="${singers[i].singerImage}" alt="card-singer-image"></div>
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
                                <p>${singers[i].singerDetail}</p>
                             </div>
-                         </div>`;
+                         </article>`;
   }
 
   seeMoreBtn.style.display = 'none';
@@ -95,14 +95,14 @@ function createSingerCard() {
   const seeMoreBtn = document.getElementById('seeMore');
   const maxIterations = (window.innerWidth < 768) ? 2 : singers.length;
   for (let i = 0; i < maxIterations; i += 1) {
-    guest.innerHTML += `<div class="singer">
+    guest.innerHTML += `<articile class="singer">
                             <div class="target"><img src="${singers[i].singerImage}" alt="card-singer-image"></div>
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
                                <p>${singers[i].singerDetail}</p>
                            </div>
-                        </div>`;
+                        </articile>`;
   }
   if (window.innerWidth < 768) {
     seeMoreBtn.style.display = 'block';
