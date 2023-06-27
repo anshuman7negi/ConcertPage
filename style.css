@@ -1,9 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,200&display=swap');
 
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -67,9 +67,12 @@ header {
 }
 
 .main-content-heading {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 900;
-  background-image: url(images/sun.jpg);
+  font-family: 'COCOGOOSE', serif;
+  background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url(images/sun.jpg);
+  background-repeat: repeat;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
   line-height: 46px;
@@ -83,33 +86,40 @@ header {
 .content-hellow {
   font-size: 26px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 5px;
   margin: 20px 0;
-  color: #f36038;
+  color: #ec5242;
+  font-family: 'lato', sans-serif;
 }
 
 .content-detail {
   border: 4px solid white;
   margin: 20px 0;
-  line-height: 30px;
   padding: 10px;
   color: #010101;
   background-color: #f6f6f7;
   max-width: 900px;
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.01em;
 }
 
 .content-secondHeading {
   font-weight: 900;
+  font-family: 'lato', sans-serif;
   color: #6d6d6d;
-  font-size: 34px;
+  font-size: 20px;
   margin: 10px;
 }
 
 .content-lastline {
   color: #8f8f8f;
-  font-size: 24px;
-  font-weight: 300;
-  font-weight: 500;
+  font-family: 'lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin: 10px;
 }
 
@@ -126,8 +136,11 @@ header {
 .program h3 {
   display: flex;
   justify-content: center;
-  font-size: 20px;
+  font-family: 'lato', sans-serif;
+  font-size: 30px;
   font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.01em;
 }
 
 .program button {
@@ -157,6 +170,14 @@ header {
   border-radius: 5px;
 }
 
+.Card p {
+  font-family: 'lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+
 .Card img {
   width: 40px;
 }
@@ -166,8 +187,11 @@ header {
 }
 
 .Card h5 {
-  font-size: 1.3rem;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
   color: #d74c3a;
+  font-family: 'lato', sans-serif;
 }
 
 /* ---------------Guest section starting-------------------- */
@@ -180,9 +204,10 @@ header {
 
 .guests h2 {
   margin: 15px auto;
+  font-weight: 400;
   font-size: 30px;
-  line-height: 35px;
-  color: #46484e;
+  line-height: 28px;
+  font-family: 'lato', sans-serif;
 }
 
 .guest-list {
@@ -198,8 +223,8 @@ header {
 }
 
 .singer img {
-  width: 172px;
-  height: 171px;
+  width: 150px;
+  height: 150px;
 }
 
 .guests button {
@@ -212,11 +237,26 @@ header {
   box-shadow: 1px 2px #fe4f38;
 }
 
+.singer-details h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272a31;
+  font-family: 'COCOGOOSE', serif;
+}
+
 .singer-details h4 {
-  color: #fd9b91;
-  font-size: 20px;
-  line-height: 30px;
+  color: #ec5242;
+  font-size: 15px;
+  line-height: 21px;
+  font-style: italic;
+  font-weight: 700;
   margin-bottom: 15px;
+  font-family: 'lato', sans-serif;
+}
+
+.singer-details p {
+  font-size: 0.95rem;
+  font-family: 'lato', sans-serif;
 }
 
 .partners {
@@ -251,7 +291,11 @@ footer {
     display: block;
     color: #fff;
     text-align: center;
+    font-family: 'lato', sans-serif;
     font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
   }
 
   .logo a {

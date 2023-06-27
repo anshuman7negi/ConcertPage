@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,200&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,10 +11,10 @@ header {
 }
 
 .main {
-  background-image: url(images/concert-mobile-bg.png);
+  background-image: url(images/about-background.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: right;
   width: 100%;
 }
 
@@ -72,12 +75,16 @@ footer > .logo a {
 }
 
 .main-content-heading {
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 900;
-  background-image: url(images/sun.jpg);
+  font-family: 'COCOGOOSE', serif;
+  background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url(images/sun.jpg);
+  background-repeat: repeat;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
   line-height: 46px;
+  text-align: center;
 }
 
 .container {
@@ -92,9 +99,14 @@ footer > .logo a {
   line-height: 12px;
   margin: 20px 0;
   color: #f36038;
+  text-align: center;
 }
 
 .content-detail {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
   border: 1px solid #898989;
   margin: 20px 0;
   color: #272a31;
@@ -105,6 +117,7 @@ footer > .logo a {
 }
 
 .content-lastline {
+  font-family: 'Lato', sans-serif;
   color: #272a31;
   font-size: 20px;
   margin: 10px;
@@ -127,16 +140,21 @@ footer > .logo a {
 }
 
 .about-music h2 {
-  font-size: 25px;
-  color: #272a31;
-  line-height: 35px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
 }
 
 .about-music p {
   margin: 10px;
-  color: #272a31;
-  font-weight: 300;
-  max-width: 750px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  text-align: center;
+  max-width: 800px;
 }
 
 .logo {
@@ -162,11 +180,14 @@ footer > .logo a {
 }
 
 .about-past h2 {
-  font-size: 25px;
   color: #272a31;
   position: relative;
-  line-height: 35px;
   text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.02em;
 }
 
 .about-past p {
@@ -179,23 +200,22 @@ footer > .logo a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
 }
 
 .about-past-container > div {
-  width: 100%;
-  height: 250px;
   position: relative;
 }
 
 .about-past-container img {
-  width: 100%;
-  height: 250px;
+  width: 430px;
+  height: 236px;
 }
 
 .image-detail {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 430px;
+  height: 236px;
   top: 0;
   left: 0;
   display: flex;
@@ -363,6 +383,7 @@ footer > .logo {
     flex-direction: row;
     gap: 20px;
     margin-top: 20px;
+    justify-content: center;
   }
 
   .partners {
