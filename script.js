@@ -25,7 +25,7 @@ const card = document.querySelector('#allcardS');
 
 for (let i = 0; i < projectCards.length; i += 1) {
   card.innerHTML += `<div class="Card">
-                          <img src="${projectCards[i].image}">
+                          <img src="${projectCards[i].image}" alt="card-icon">
                           <h5>${projectCards[i].cardTitle}</h5>
                          <p>
                              ${projectCards[i].cardDetail}
