@@ -73,8 +73,6 @@ const singers = [
 ];
 
 function createSingerCard() {
-  document.getElementById('demo-card-one').style.display = 'none';
-  document.getElementById('demo-card-two').style.display = 'none';
   const guest = document.getElementById('guest-list');
   for (let i = 0; i < singers.length; i += 1) {
     guest.innerHTML += `<div class="singer">
@@ -88,7 +86,9 @@ function createSingerCard() {
   document.getElementById('seeMore').style.display = 'none';
 }
 
-document.getElementById('seeMore').addEventListener('click', createSingerCard);
+createSingerCard();
+
+// document.getElementById('seeMore').addEventListener('click', createSingerCard);
 
 //  mobile menu click button
 
@@ -114,13 +114,3 @@ document.getElementById('cancelBtn').addEventListener('click', () => {
     hideElements[i].style.display = '';
   }
 });
-
-if (window.innerWidth >= 768) {
-  createSingerCard();
-}
-
-// window.addEventListener('resize', function() {
-//   if (window.innerWidth >= 768) {
-//     createSingerCard();
-//   }
-// });
