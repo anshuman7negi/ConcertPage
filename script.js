@@ -107,8 +107,7 @@ function createSingerCard() {
   if (window.innerWidth < 768) {
     seeMoreBtn.style.display = 'block';
     seeMoreBtn.addEventListener('click', showMoreCards);
-  }
-  else {
+  } else {
     seeMoreBtn.style.display = 'none';
   }
 }
