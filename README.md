@@ -58,9 +58,6 @@ A Ziro Music Festival is a live music performance in front of an audience. The p
 
 - [Live Demo Link](https://anshuman7negi.github.io/ConcertPage/)
 
-## Website Video Demo
-Check this [video](https://www.loom.com/share/de5ec23038d84741b2d1f36479ddf74e?sid=a1465945-1272-41d6-9f37-523c4468a161) describing this project's features.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
