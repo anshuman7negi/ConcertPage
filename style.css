@@ -1,0 +1,503 @@
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,100;1,200&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: none;
+}
+
+.main {
+  background-image: url(images/concert-mobile-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.Mobile-navbar {
+  padding: 20px;
+}
+
+.Mobile-navbar ul {
+  display: none;
+  flex-direction: column;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100vh;
+}
+
+.Mobile-navbar img {
+  display: none;
+  background-color: red;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  width: 40px;
+}
+
+.program a {
+  display: none;
+}
+
+.Mobile-navbar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #010101;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Mobile-navbar .hamburger {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.content {
+  color: #fff;
+}
+
+.main-content-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: 'COCOGOOSE', serif;
+  background-image: linear-gradient(rgba(255, 38, 0, 0.76), rgba(255, 51, 0, 0.575)), url(images/sun.jpg);
+  background-repeat: repeat;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 46px;
+}
+
+.container {
+  padding: 4%;
+  padding-bottom: 10%;
+}
+
+.content-hellow {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 5px;
+  margin: 20px 0;
+  color: #ec5242;
+  font-family: 'lato', sans-serif;
+}
+
+.content-detail {
+  border: 4px solid white;
+  margin: 20px 0;
+  padding: 10px;
+  color: #010101;
+  background-color: #f6f6f7;
+  max-width: 900px;
+  font-family: 'lato', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+}
+
+.content-secondHeading {
+  font-weight: 900;
+  font-family: 'lato', sans-serif;
+  color: #6d6d6d;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.content-lastline {
+  color: #8f8f8f;
+  font-family: 'lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 10px;
+}
+
+/* ------------------card work---------------- */
+.program {
+  display: grid;
+  grid-row-gap: 30px;
+  justify-content: center;
+  background-image: url(images/program-bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 7% 2%;
+  color: #fff;
+}
+
+.program h3 {
+  display: flex;
+  justify-content: center;
+  font-family: 'lato', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  position: relative;
+}
+
+.program h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 1px;
+  background-color: #ec5242;
+}
+
+.program button {
+  width: 200px;
+  height: 50px;
+  background-color: #fe4f38;
+  color: #fdd9d6;
+  border: none;
+  margin: 10px auto;
+  font-family: 'lato', sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.Card {
+  display: flex;
+  gap: 20px;
+  height: 100px;
+  background-color: #5f5f5f50;
+  color: #d3d3d3;
+  margin: 8px 0;
+  padding: 0 20px;
+  align-items: center;
+  border: 1px solid #8f8f8f;
+  border-radius: 5px;
+}
+
+.Card p {
+  font-family: 'lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+}
+
+.Card img {
+  width: 40px;
+}
+
+.Card:hover {
+  border: 3px solid #fff;
+}
+
+.Card h5 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #d74c3a;
+  font-family: 'lato', sans-serif;
+}
+
+/* ---------------Guest section starting-------------------- */
+.guests {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 1%;
+  gap: 20px;
+}
+
+.guests h2 {
+  margin: 15px auto;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 28px;
+  font-family: 'lato', sans-serif;
+  position: relative;
+}
+
+.guests h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2px;
+  background-color: #ec5242;
+}
+
+.guest-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.singer {
+  display: flex;
+  gap: 20px;
+}
+
+.singer img {
+  width: 150px;
+  height: 150px;
+}
+
+.target {
+  display: flex;
+  background-image: url(images/chessbg.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.guests button {
+  width: 90%;
+  height: 37px;
+  margin: 10px auto;
+  font-size: 20px;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  box-shadow: 1px 2px #fe4f38;
+}
+
+.singer-details h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #272a31;
+  font-family: 'COCOGOOSE', serif;
+}
+
+.singer-details h4 {
+  color: #ec5242;
+  font-size: 15px;
+  line-height: 21px;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'lato', sans-serif;
+  position: relative;
+}
+
+.singer-details h4::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 3%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+
+.singer-details p {
+  font-size: 0.95rem;
+  font-family: 'lato', sans-serif;
+}
+
+.partners {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+/* ------------------------Desktop Version----------------- */
+@media screen and (min-width: 768px) {
+  header {
+    display: block;
+  }
+
+  header .top-navbar {
+    background-color: #3e3e3e;
+    color: #fff;
+  }
+
+  header .top-navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    margin-right: 8rem;
+    list-style-type: none;
+  }
+
+  .program a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+
+  footer > .logo a {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  header .top-navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .partners-details img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+  }
+
+  header .top-navbar ul li a img {
+    width: 2rem;
+  }
+
+  .Mobile-navbar {
+    display: none;
+  }
+
+  header .bottom-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 7rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .logo {
+    display: block;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  .bottom-navbar .logo {
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .logo span {
+    color: #f22917;
+  }
+
+  .bottom-navbar .logo span {
+    font-size: 30px;
+    line-height: 25px;
+    color: #f34d17;
+  }
+
+  header .bottom-navbar ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  header .bottom-navbar ul li a {
+    text-decoration: none;
+    color: #3b434e;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  header .bottom-navbar ul li {
+    border: 4px solid #fff;
+    padding: 0.9rem;
+  }
+
+  header .bottom-navbar ul li:hover {
+    border: 4px solid #f04831;
+    padding: 0.9rem;
+  }
+
+  .container {
+    padding: 7%;
+    padding-bottom: 10%;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .Card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 210px;
+    background-color: #5f5f5f50;
+  }
+
+  .program button {
+    display: none;
+  }
+
+  .program h3 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  .Card p {
+    text-align: center;
+  }
+
+  #seeMore {
+    display: none;
+  }
+
+  .guest-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 25px;
+    align-items: center;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 30px;
+    background-color: #404245;
+  }
+
+  .partners h2 {
+    color: #fff;
+  }
+}
