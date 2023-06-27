@@ -1,21 +1,21 @@
 const projectCards = [
   {
-    image: "images/music.png",
+    image: 'images/music.png',
     cardTitle: 'Music Night',
     cardDetail: ' Enjoy live show full of your favourite songs.',
   },
   {
-    image: "images/dance.png",
+    image: 'images/dance.png',
     cardTitle: 'Dancing',
     cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
   },
   {
-    image: "images/collab.png",
+    image: 'images/collab.png',
     cardTitle: 'Collaboration',
     cardDetail: 'You will get a chance to collaborate with singers.',
   },
   {
-    image: "images/videoconference.png",
+    image: 'images/videoconference.png',
     cardTitle: 'Meetup',
     cardDetail: 'You will get a chance to meet with your favoratie singers.',
   },
@@ -72,6 +72,24 @@ const singers = [
   },
 ];
 
+function showMoreCards() {
+  const guest = document.getElementById('guest-list');
+  const seeMoreBtn = document.getElementById('seeMore');
+
+  for (let i = 2; i < singers.length; i += 1) {
+    guest.innerHTML += `<div class="singer">
+                            <img src="${singers[i].singerImage}" alt="card-singer-image">
+                            <div class="singer-details">
+                               <h3>${singers[i].singerName}</h3>
+                               <h4>${singers[i].singerTitle}</h4>
+                               <p>${singers[i].singerDetail}</p>
+                            </div>
+                         </div>`;
+  }
+
+  seeMoreBtn.style.display = 'none';
+}
+
 function createSingerCard() {
   const guest = document.getElementById('guest-list');
   const seeMoreBtn = document.getElementById('seeMore');
@@ -92,35 +110,15 @@ function createSingerCard() {
   }
 }
 
-function showMoreCards() {
-  const guest = document.getElementById('guest-list');
-  const seeMoreBtn = document.getElementById('seeMore');
-
-  for (let i = 2; i < singers.length; i += 1) {
-    guest.innerHTML += `<div class="singer">
-                            <img src="${singers[i].singerImage}" alt="card-singer-image">
-                            <div class="singer-details">
-                               <h3>${singers[i].singerName}</h3>
-                               <h4>${singers[i].singerTitle}</h4>
-                               <p>${singers[i].singerDetail}</p>
-                            </div>
-                         </div>`;
-  }
-
-  seeMoreBtn.style.display = 'none';
-}
-
 createSingerCard();
 
-window.addEventListener('resize', function() {
+window.addEventListener('resize', () => {
   const guest = document.getElementById('guest-list');
-  const seeMoreBtn = document.getElementById('seeMore');
-  
+
   guest.innerHTML = '';
-  
+
   createSingerCard();
 });
-
 
 //  mobile menu click button
 const hamburger = document.getElementById('hamburger');
