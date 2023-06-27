@@ -1,21 +1,21 @@
 const projectCards = [
   {
-    image: '/images/music.png',
+    image: "images/music.png",
     cardTitle: 'Music Night',
     cardDetail: ' Enjoy live show full of your favourite songs.',
   },
   {
-    image: '/images/dance.png',
+    image: "images/dance.png",
     cardTitle: 'Dancing',
     cardDetail: ' Dance on music and enjoy live show full of your favourite songs.',
   },
   {
-    image: '/images/collab.png',
+    image: "images/collab.png",
     cardTitle: 'Collaboration',
     cardDetail: 'You will get a chance to collaborate with singers.',
   },
   {
-    image: '/images/videoconference.png',
+    image: "images/videoconference.png",
     cardTitle: 'Meetup',
     cardDetail: 'You will get a chance to meet with your favoratie singers.',
   },
