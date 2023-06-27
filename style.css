@@ -141,6 +141,18 @@ header {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.01em;
+  position: relative;
+}
+
+.program h3::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 1px;
+  background-color: #ec5242;
 }
 
 .program button {
@@ -150,6 +162,7 @@ header {
   color: #fdd9d6;
   border: none;
   margin: 10px auto;
+  font-family: 'lato', sans-serif;
 }
 
 .cards {
@@ -208,6 +221,18 @@ header {
   font-size: 30px;
   line-height: 28px;
   font-family: 'lato', sans-serif;
+  position: relative;
+}
+
+.guests h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2px;
+  background-color: #ec5242;
 }
 
 .guest-list {
@@ -225,6 +250,16 @@ header {
 .singer img {
   width: 150px;
   height: 150px;
+}
+
+.target {
+  display: flex;
+  background-image: url(images/chessbg.jpg);
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .guests button {
@@ -252,6 +287,18 @@ header {
   font-weight: 700;
   margin-bottom: 15px;
   font-family: 'lato', sans-serif;
+  position: relative;
+}
+
+.singer-details h4::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 3%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 2px;
+  background-color: #d9d9d9;
 }
 
 .singer-details p {

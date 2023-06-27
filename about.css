@@ -145,6 +145,18 @@ footer > .logo a {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -0.02em;
+  position: relative;
+}
+
+.about-music h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 2px;
+  background-color: #ec5242;
 }
 
 .about-music p {
@@ -188,6 +200,17 @@ footer > .logo a {
   font-weight: 700;
   line-height: 28px;
   letter-spacing: -0.02em;
+}
+
+.about-past h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4rem;
+  height: 2px;
+  background-color: #ec5242;
 }
 
 .about-past p {
@@ -245,7 +268,20 @@ footer > .logo a {
 }
 
 .partners h2 {
+  font-family: 'Lato', sans-serif;
   color: #fff;
+  position: relative;
+}
+
+.partners h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2rem;
+  height: 1px;
+  background-color: #ec5242;
 }
 
 .partners-details img {

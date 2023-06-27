@@ -78,7 +78,7 @@ function showMoreCards() {
 
   for (let i = 2; i < singers.length; i += 1) {
     guest.innerHTML += `<div class="singer">
-                            <img src="${singers[i].singerImage}" alt="card-singer-image">
+                            <div class="target"><img src="${singers[i].singerImage}" alt="card-singer-image"></div>
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
@@ -96,7 +96,7 @@ function createSingerCard() {
   const maxIterations = (window.innerWidth < 768) ? 2 : singers.length;
   for (let i = 0; i < maxIterations; i += 1) {
     guest.innerHTML += `<div class="singer">
-                            <img src="${singers[i].singerImage}" alt="card-singer-image">
+                            <div class="target"><img src="${singers[i].singerImage}" alt="card-singer-image"></div>
                             <div class="singer-details">
                                <h3>${singers[i].singerName}</h3>
                                <h4>${singers[i].singerTitle}</h4>
