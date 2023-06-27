@@ -108,6 +108,9 @@ function createSingerCard() {
     seeMoreBtn.style.display = 'block';
     seeMoreBtn.addEventListener('click', showMoreCards);
   }
+  else {
+    seeMoreBtn.style.display = 'none';
+  }
 }
 
 createSingerCard();
